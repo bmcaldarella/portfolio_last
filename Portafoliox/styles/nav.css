@@ -1,0 +1,74 @@
+header{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+
+  
+  }
+  #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      position: fixed;
+      top: 1rem; 
+      right: 1rem; 
+     
+     
+      
+  }
+  
+  #menu::before {
+      content: "☰";
+      cursor: pointer;
+      font-size: 40px;
+      color: aliceblue;
+     
+      
+      
+  }
+  
+  #menu.open::before {
+      content: "X";
+      
+  }
+  .navigation {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+  text-align: center;
+ 
+  
+  
+  }
+   a{
+   display: none;
+   text-decoration: none;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   margin: 10px;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 24px;
+   
+   
+  }
+  
+  .navigation a:hover{
+    
+    color: rgb(164, 164, 164);
+
+  
+  
+  
+    
+    
+  }
+  .open a {
+      display: block;
+    
+      
+  }
+  
+  
